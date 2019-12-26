@@ -1,10 +1,11 @@
 # Aws insrastructure testing example
 
-##### PREREQUISITES. The following components should be installed to perform test suite:
+##### PREREQUISITES. The following components should be installed to perform test demo:
 1. ruby ('ruby -v' to check)
 2. bundler ('gem install bundler' to install)
 3. terraform (use appropriate package manager to install)
 4. aws-cli (use appropriate package manager to install)
+5. jq (use appropriate package manager to install)
 
 ##### 1. Clone repo:
 ```
