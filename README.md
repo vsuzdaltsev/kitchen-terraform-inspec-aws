@@ -29,4 +29,8 @@ $ bash create_ec2_key.sh
 ```
 $ kitchen test
 ```
+This will do the following (according to .kitchen.yml):
+- create infrastructure described within terraform files (example ec2 instance, example_ssh security group)
+- run inspec controls (egrep -rin control test/integration/default/controls)
+- destroy infrastructure
 ###### NB: The infrastructure defined within terrafrom files will be created, validated using inspec controls and then destroyed
