@@ -1,9 +1,9 @@
 ---
 name: default
 title: InSpec Profile
-maintainer: exadel
-copyright: exadel
-copyright_email: vsuzdaltsev@exadel.com
+maintainer: vsuzdaltsev
+copyright: vsuzdaltsev
+copyright_email: vsuzdaltsev@mydomain.com
 license: Apache-2.0
 summary: Test compliance profile
 version: 0.1.0
