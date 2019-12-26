@@ -19,7 +19,7 @@ verifier:
   systems:
     - name: example
       backend: ssh
-      hosts_output: public_dns
+      hosts_output: instance_public_dns
       controls:
         - operating_system
       user: ubuntu
@@ -27,7 +27,8 @@ verifier:
     - name: aws
       backend: aws
       controls:
-        - aws
+        - ec2
+        - sg
 
 suites:
   - name: default
