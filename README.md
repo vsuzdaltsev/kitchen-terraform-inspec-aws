@@ -4,6 +4,7 @@
 1. ruby ('ruby -v' to check)
 2. bundler ('gem install bundler' to install)
 3. terraform (use appropriate package manager to install)
+4. aws-cli (use appropriate package manager to install)
 
 #####1. Clone repo:
 ```
