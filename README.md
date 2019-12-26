@@ -6,24 +6,24 @@
 3. terraform (use appropriate package manager to install)
 4. aws-cli (use appropriate package manager to install)
 
-#####1. Clone repo:
+##### 1. Clone repo:
 ```
 $ git clone git@github.com:vsuzdaltsev/kitchen-terraform-inspec-aws.git
 $ cd kitchen-terraform-inspec-aws
 ```
-#####2. Install mandatory libraries:
+##### 2. Install mandatory libraries:
 ```
 $ bundle install
 ```
-#####3. Set necessary environment variables:
+##### 3. Set necessary environment variables:
 ```
 $ source aws_authenticate.sh
 ```
-#####4. Create key pair for accessing ec2 instance:
+##### 4. Create key pair for accessing ec2 instance:
 ```
 $ bash create_ec2_key.sh
 ```
-#####5. Run tests:
+##### 5. Run tests:
 ```
 $ kitchen test
 ```
