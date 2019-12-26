@@ -16,8 +16,9 @@ $ cd kitchen-terraform-inspec-aws
 ```
 $ bundle install
 ```
-##### 3. Set necessary environment variables:
+##### 3. Set proper environment variables and export them:
 ```
+$ vim aws_authenticate.sh      # fix api key values
 $ source aws_authenticate.sh
 ```
 ##### 4. Create key pair for accessing ec2 instance:
