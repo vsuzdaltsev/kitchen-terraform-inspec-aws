@@ -1,0 +1,33 @@
+---
+driver:
+  name: terraform
+  variable_files:
+    - testing.tfvars
+
+provisioner:
+  name: terraform
+
+platforms:
+  - name: ubuntu
+
+transport:
+  name: ssh
+  ssh_key: /opt/kubernetes/k8s-specs/cluster/devops23.pem
+
+verifier:
+  name: terraform
+  systems:
+    - name: example
+      backend: ssh
+      hosts_output: public_dns
+      controls:
+        - operating_system
+      user: ubuntu
+
+    - name: aws
+      backend: aws
+      controls:
+        - aws
+
+suites:
+  - name: default
