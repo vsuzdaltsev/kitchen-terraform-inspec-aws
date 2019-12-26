@@ -8,7 +8,7 @@ provisioner:
   name: terraform
 
 platforms:
-  - name: ubuntu
+  - name: os
 
 transport:
   name: ssh
