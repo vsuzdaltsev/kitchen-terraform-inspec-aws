@@ -12,7 +12,7 @@ platforms:
 
 transport:
   name: ssh
-  ssh_key: /opt/kubernetes/k8s-specs/cluster/devops23.pem
+  ssh_key: test.pem
 
 verifier:
   name: terraform
